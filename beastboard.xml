@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Home Row Symbols Overlay</name>
+        <item>
+            <name>Home Row Numbers</name>
+            <appendix>Overlay (=|)onto the home row (ASDFGHJKL)</appendix>
+            <identifier vk_config="true">notsave.homerow_symbols</identifier>
+            <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, KeyCode::EQUAL</autogen>
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::G, KeyCode::KEY_1, ModifierFlag::SHIFT_L</autogen>
+<!--<autogen>__KeyToKey__ KeyCode::T, KeyCode::SLASH, ModifierFlag::SHIFT_L</autogen> previously was T => ? (? moved back to normal location w/ spacebar)-->
+            <autogen>__KeyToKey__ KeyCode::H, KeyCode::BRACKET_LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::Y, KeyCode::BRACKET_RIGHT</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::SEMICOLON</autogen>
+            <autogen>__KeyToKey__ KeyCode::N, KeyCode::QUOTE</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::QUOTE, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::COMMA, ModifierFlag::SHIFT_L, KeyCode::KEY_5, ModifierFlag::SHIFT_L, KeyCode::SPACE, ModifierFlag::SHIFT_L, KeyCode::KEY_5,<!--DO NOT DELETE-->
+                ModifierFlag::SHIFT_L, KeyCode::DOT, ModifierFlag::SHIFT_L, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT, KeyCode::CURSOR_LEFT</autogen><!--DO NOT DELETE! dot(period)=> '<% %>'-->
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::MINUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::V, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::SLASH, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::KEY_4, ModifierFlag::SHIFT_L </autogen><!--$ replaces ? at T position -->
+        </item>
+        <item>
+            <name>Hold Space+ASDFGHJKL; to symbols</name>
+            <identifier>remap.space_to_homerow_symbols</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_symbols, KeyCode::SPACE</autogen>
+        </item>
+    </item>
+</root>
+
+<root>
+    <item>
+        <name>J for navigation</name>
+        <item>
+            <name>Home Row Arrows</name>
+            <appendix>Overlay arrows onto the home row (ASDFGHJKL)</appendix>
+            <identifier vk_config="true">notsave.homerow_chickens</identifier>
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::CURSOR_LEFT</autogen><!--left-->
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::CURSOR_RIGHT</autogen><!--right-->
+            <autogen>__KeyToKey__ KeyCode::D, KeyCode::CURSOR_DOWN</autogen><!--down-->
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::CURSOR_UP</autogen><!--up-->
+            <autogen>__KeyToKey__ KeyCode::G, KeyCode::CURSOR_RIGHT, ModifierFlag:: OPTION_L</autogen><!--next word right-->
+            <autogen>__KeyToKey__ KeyCode::A, KeyCode::CURSOR_LEFT, ModifierFlag:: OPTION_L</autogen><!--next word left-->
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen><!--end of line-->
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen><!--end of line duplicate, in case you miss-->
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen><!-- start of line-->
+            <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::CURSOR_UP, KeyCode::CURSOR_UP, KeyCode::CURSOR_UP </autogen> <!--up three lines-->
+            <autogen>__KeyToKey__ KeyCode::C, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN </autogen> <!--down three lines-->
+<!-- still finding a good home for page up and page down-->
+<!--            <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen> <!--page top-->
+<!--            <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen> <!--page top duplicate, in case you miss-->
+<!--no longer used...copy cut paste and save moved to L key            -->
+<!--            <autogen>__KeyToKey__ KeyCode::W, KeyCode::A, ModifierFlag::CONTROL_L</autogen>-->
+<!--            <autogen>__KeyToKey__ KeyCode::Z, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>-->
+<!--            <autogen>__KeyToKey__ KeyCode::X, KeyCode::X, ModifierFlag::COMMAND_L</autogen>-->
+<!--            <autogen>__KeyToKey__ KeyCode::C, KeyCode::C, ModifierFlag::COMMAND_L</autogen>-->
+<!--            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::S, ModifierFlag::COMMAND_L</autogen>-->
+<!--            <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::TAB, ModifierFlag::COMMAND_L</autogen>-->
+        </item>
+        <item>
+            <name>Hold j+SDEF; to arrows</name>
+            <identifier>remap.j_to_homerow_arrows</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::J, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_chickens, KeyCode::J</autogen>
+        </item>
+    </item>
+    <item>
+        <name>Home Row digits Overlay</name>
+        <item>
+            <name>Home Row Digits</name>
+            <appendix>Overlay digits onto the home row (ASDFGHJKL)</appendix>
+            <identifier vk_config="true">notsave.homerow_muscrats</identifier>
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::KEY_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::KEY_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::KEY_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::KEY_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, KeyCode::KEY_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::KEY_6</autogen>
+            <autogen>__KeyToKey__ KeyCode::X, KeyCode::KEY_7</autogen>
+            <autogen>__KeyToKey__ KeyCode::C, KeyCode::KEY_8</autogen>
+            <autogen>__KeyToKey__ KeyCode::V, KeyCode::KEY_9</autogen>
+            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::KEY_0</autogen>
+        </item>
+        <item>
+            <name>Hold j+SDEF; to arrows</name>
+            <identifier>remap.k_to_homerow_digits</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_muscrats, KeyCode::K</autogen>
+        </item>
+    </item>
+</root>
+<root>
+    <item>
+        <name>L for Command(and other modifiers)</name>
+        <item>
+            <name>Home</name>
+            <appendix>L for Command</appendix>
+            <identifier vk_config="true">notsave.homerow_l</identifier>
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::S, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::X, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::Z, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::C, KeyCode::C, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::V, KeyCode::V, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::TAB, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::R, KeyCode::A, KeyCode::I, KeyCode::L, KeyCode::S</autogen><!--types RAILS -->
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::R, KeyCode::A, KeyCode::I, KeyCode::L, KeyCode::S, KeyCode::SPACE, KeyCode::G, KeyCode::SPACE,
+                KeyCode::M, KeyCode::I, KeyCode::G, KeyCode::R, KeyCode::A, KeyCode::T, KeyCode::I, KeyCode::O, KeyCode::N</autogen><!--types rails g migration -->
+        </item>
+        <item>
+            <name>Hold j+SDEF; to arrows</name>
+            <identifier>remap.l_to_homerow_digits</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_l, KeyCode::L</autogen>
+        </item>
+    </item>
+</root>
+
+<root>
+    <item>
+        <name>H hold for cloud9 and Chrome commands</name> <!--tab, refresh, switch terminal and editor, file search-->
+        <item>
+            <name>Home</name>
+            <appendix>H for cloud9 and Chrome</appendix>
+            <identifier vk_config="true">notsave.homerow_h</identifier>
+            <autogen>__KeyToKey__ KeyCode::A, KeyCode::ESCAPE, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L</autogen><!--PANE 'left' cloud9-->
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::TAB, ModifierFlag::OPTION_L</autogen><!--tab right cloud9-->
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::TAB, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L</autogen><!--tab left cloud9-->
+            <autogen>__KeyToKey__ KeyCode::G, KeyCode::ESCAPE, ModifierFlag::OPTION_L</autogen><!--PANE 'right' cloud9-->
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen><!--tab right chrome-->
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen><!--tab right chrome duplicate-->
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::TAB, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L</autogen><!--tab left chrome-->
+            <autogen>__KeyToKey__ KeyCode::D, KeyCode::S, ModifierFlag::OPTION_L</autogen><!--switch editor and terminal cloud9-->
+<!--below was disabled due to it causing a strange symbol to appear while typing            -->
+<!--            <autogen>__KeyToKey__ KeyCode::E, KeyCode::S, ModifierFlag::OPTION_L</autogen><!--switch editor and terminal cloud9 -->
+            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::R, ModifierFlag::COMMAND_L</autogen><!--refresh chrome browser; possibly other browsers?-->
+            <autogen>__KeyToKey__ KeyCode::Z, KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L</autogen><!-- switch chrome WINDOWS; possibly other browsers?-->
+            <autogen>__KeyToKey__ KeyCode::V, KeyCode::E, ModifierFlag::COMMAND_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::H, KeyCode::E </autogen> <!--fix for HE; if you are still holding H when hit E; you get HE -->
+        </item>
+        <item>
+            <name>Hold j+SDEF; to arrows</name>
+            <identifier>remap.h_to_homerow_digits</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::H, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_h, KeyCode::H</autogen>
+        </item>
+    </item>
+</root>
+
+<root>
+    <item>
+        <name>M for select</name> <!--hold down M for highlight/select-->
+        <item>
+            <name>Home</name>
+            <appendix>M for select</appendix>
+            <identifier vk_config="true">notsave.homerow_m</identifier>
+            <autogen>__KeyToKey__ KeyCode::S, KeyCode::CURSOR_LEFT, ModifierFlag:: SHIFT_L</autogen><!--hightlight left-->
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::CURSOR_RIGHT,ModifierFlag:: SHIFT_L </autogen><!--highlight right-->
+            <autogen>__KeyToKey__ KeyCode::D, KeyCode::CURSOR_DOWN, ModifierFlag:: SHIFT_L</autogen><!--highlight down-->
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::CURSOR_UP, ModifierFlag:: SHIFT_L</autogen><!--highlight up-->
+            <autogen>__KeyToKey__ KeyCode::G, KeyCode::CURSOR_RIGHT, ModifierFlag:: OPTION_L, ModifierFlag:: SHIFT_L</autogen><!--highlight next word right-->
+            <autogen>__KeyToKey__ KeyCode::A, KeyCode::CURSOR_LEFT, ModifierFlag:: OPTION_L, ModifierFlag:: SHIFT_L</autogen><!--highlight next word left-->
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, ModifierFlag:: SHIFT_L</autogen><!--highlight end of line-->
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, ModifierFlag:: SHIFT_L</autogen><!--highlight end of line duplicate, in case you miss-->
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, ModifierFlag:: SHIFT_L</autogen><!-- highlight start of line-->
+            <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::CURSOR_UP, ModifierFlag:: SHIFT_L, KeyCode::CURSOR_UP, ModifierFlag:: SHIFT_L, KeyCode::CURSOR_UP, ModifierFlag:: SHIFT_L </autogen>
+            <!--highlight upwards three lines-->
+            <autogen>__KeyToKey__ KeyCode::C, KeyCode::CURSOR_DOWN, ModifierFlag:: SHIFT_L, KeyCode::CURSOR_DOWN, ModifierFlag:: SHIFT_L, KeyCode::CURSOR_DOWN, ModifierFlag:: SHIFT_L</autogen>
+            <!--highlight downwards three lines-->
+        </item>
+        <item>
+            <name>Hold j+SDEF; to arrows</name>
+            <identifier>remap.m_to_homerow_digits</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_homerow_m, KeyCode::M</autogen>
+        </item>
+    </item>
+</root>
